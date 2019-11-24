@@ -1,0 +1,11 @@
+<header class="header">
+  <div class="flex-container align-center">
+    <div class="flex-grow">
+      <a><img src="assets/logo.svg" alt=""></a>
+    </div>
+    <a class="user">
+      <div [ngStyle]="{ 'background-image': 'url(' + user.thumbnail + ')' }" class="user__avatar"></div>
+      <div class="user__name">{{ user.name }}</div>
+    </a>
+  </div>
+</header>
