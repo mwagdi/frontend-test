@@ -15,7 +15,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
     this.user = {
       name: 'Morten',
-      thumbnail: 'this/url',
+      thumbnail:
+        'https://image.shutterstock.com/z/stock-vector-default-avatar-profile-icon-grey-photo-placeholder-518740741.jpg',
     };
   }
 }
