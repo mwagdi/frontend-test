@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-type User = {
-  name: string;
-  thumbnail: string;
-};
+import { User } from '../types';
 
 @Component({
   selector: 'app-header',

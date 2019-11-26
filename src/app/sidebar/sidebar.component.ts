@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-type Company = {
-  domain: string;
-  thumbnail: string;
-};
+import { Company } from '../types';
 
 @Component({
   selector: 'app-sidebar',

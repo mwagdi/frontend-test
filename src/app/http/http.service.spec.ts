@@ -1,11 +1,8 @@
 import { TestBed, getTestBed } from '@angular/core/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { HttpService } from './http.service';
-type Item = {
-  id: number;
-  parent_id: null | number;
-  title: string;
-};
+import { Item } from '../types';
+
 describe('HttpService', () => {
   let httpMock: HttpTestingController;
   let httpService: HttpService;

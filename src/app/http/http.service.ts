@@ -1,12 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-
-type Item = {
-  id: number;
-  parent_id: null | number;
-  title: string;
-};
+import { Item } from '../types';
 
 @Injectable()
 export class HttpService {
