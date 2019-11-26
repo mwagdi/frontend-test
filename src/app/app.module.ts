@@ -7,11 +7,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { HttpService } from './http/http.service';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, HeaderComponent, SidebarComponent],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule],
-  providers: [],
+  providers: [HttpService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
