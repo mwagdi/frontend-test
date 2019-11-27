@@ -1,0 +1,17 @@
+.input-container {
+  border: 1px solid #E5E9ED;
+  border-radius: 5px;
+  background-color: white;
+  padding: 0.86em 1.43em;
+}
+
+input {
+  border: none;
+  outline: none;
+  font-family: "Soleil", sans-serif;
+  font-size: 14px;
+
+  &::placeholder {
+    color: rgba(76, 108, 131, 0.5);
+  }
+}

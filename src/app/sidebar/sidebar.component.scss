@@ -1,7 +1,49 @@
 .sidebar {
   width: 240px;
+  padding: 2.86em;
 
   &__company {
-    &_image {}
+    margin-bottom: 4.07em;
+
+    &_image {
+      @media only screen and (max-width: 900px) {
+        width: 100px;
+      }
+    }
+
+    &_name {
+      color: #002D4F;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    @media only screen and (max-width: 900px) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    width: 100%;
+    align-items: center;
+    padding: 1em;
+  }
+
+  &__menu {
+    @media only screen and (max-width: 900px) {
+      display: flex;
+      flex-grow: 1;
+      justify-content: space-around;
+    }
+  }
+}
+
+a {
+  color: #4C6C83;
+  font-weight: 600;
+  margin-bottom: 2.36em;
+  display: block;
+
+  @media only screen and (max-width: 900px) {
+    margin-bottom: 0;
   }
 }

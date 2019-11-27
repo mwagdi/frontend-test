@@ -15,6 +15,5 @@ export class ItemComponent {
   level: number;
   ngOnInit() {
     this.children = this.items.filter(i => this.item.id === i.parent_id);
-    console.log(this.item.id, this.children);
   }
 }

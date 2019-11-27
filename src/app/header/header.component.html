@@ -1,13 +1,10 @@
 <header class="header">
   <div class="flex-container align-center">
     <div class="flex-grow">
-      <a routerLink="/"><img src="assets/logo.svg" alt="logo"/></a>
+      <a routerLink="/"><img src="assets/logo.svg" alt="logo" /></a>
     </div>
-    <a class="user">
-      <div
-        [ngStyle]="{ 'background-image': 'url(' + user.thumbnail + ')' }"
-        class="user__avatar"
-      ></div>
+    <a class="user flex-container align-center">
+      <div [ngStyle]="{ 'background-image': 'url(' + user.thumbnail + ')' }" class="user__avatar"></div>
       <div class="user__name">{{ user.name }}</div>
     </a>
   </div>

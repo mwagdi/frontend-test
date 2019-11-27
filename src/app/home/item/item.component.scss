@@ -1,0 +1,24 @@
+.item {
+  &__wrap {
+    background-color: white;
+    border: 1px solid #E5E9ED;
+    border-radius: 5px;
+    padding: 1.43em;
+    margin-top: 1.43em;
+  }
+
+  &__title {
+    font-size: 1.714rem;
+    color: #00124F;
+    font-weight: 600;
+  }
+
+  &__link {
+    background-color: #0087EF;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 0.86em 2.5em;
+  }
+}
