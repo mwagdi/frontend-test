@@ -9,9 +9,10 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HttpService } from './http/http.service';
+import { ItemComponent } from './home/item/item.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, HeaderComponent, SidebarComponent],
+  declarations: [AppComponent, HomeComponent, HeaderComponent, SidebarComponent, ItemComponent],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule, ReactiveFormsModule],
   providers: [HttpService],
   bootstrap: [AppComponent],

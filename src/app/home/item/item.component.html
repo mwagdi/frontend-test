@@ -1,0 +1,7 @@
+<div [ngStyle]="{'padding-left': item.parent_id ? '10px' : 0}" class="item">
+  <div class="item__wrap flex-container">
+    <h3 class="item__title flex-grow">{{ item.title }}</h3>
+    <a href="" class="item__link">Button</a>
+  </div>
+  <app-item *ngFor="let i of children" [item]="i" [items]="items"></app-item>
+</div>

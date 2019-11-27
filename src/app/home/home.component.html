@@ -1,7 +1,9 @@
-<main>
-  <div class="input-container">
+<div>
+  <div class="input-container flex-container align-center">
     <input type="text" [formControl]="search">
-    <button (click)="logSearch()">LOG</button>
-    <img src="" alt="">
+    <img src="assets/search.svg" alt="search icon">
   </div>
-</main>
+  <div class="items-container">
+    <app-item *ngFor="let i of shownItems" [item]="i" [items]="items"></app-item>
+  </div>
+</div>

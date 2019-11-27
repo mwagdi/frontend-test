@@ -16,12 +16,13 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.http.getAll().subscribe(data => {
       this.items = data;
-      this.shownItems = data;
+      this.shownItems = data.filter(i => i.parent_id == null);
     });
     this.search.valueChanges.subscribe(value => {
-      this.shownItems = this.items.filter(({ title }) =>
-        title.toLowerCase().includes(value.toLowerCase()),
-      );
+      this.shownItems =
+        value === ''
+          ? this.items.filter(i => i.parent_id == null)
+          : this.items.filter(({ title }) => title.toLowerCase().includes(value.toLowerCase()));
     });
   }
 }
